@@ -277,7 +277,7 @@ h3 {
 .section {
   padding-bottom: 30px;
   padding-top: 0;
-  //position: relative;
+  position: relative;
 }
 
 .full-height {
@@ -392,12 +392,22 @@ h3 {
   background-color: rgba(0, 0, 0, 0.02);
   border: none;
 }
+#projects .card-action {
+  background-color: rgba(0, 0, 0, 0.02);
+  border: none;
+}
 
 #experience .card .col.s12.m2 a {
   display: block;
 }
+#projects .card .col.s12.m2 a {
+  display: block;
+}
 
 #experience .card .col.s12.m2 a img {
+  max-height: 60px;
+}
+#projects .card .col.s12.m2 a img {
   max-height: 60px;
 }
 
@@ -477,6 +487,10 @@ a.hoverline:hover {
   border-bottom: 1px solid #ddd;
   padding-bottom: 10px;
 }
+#projects .card-content .row {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
 
 .card.large .card-image {
   height: 230px;
@@ -501,6 +515,9 @@ a.hoverline:hover {
 }
 
 #experience .col.s12.m2 {
+  text-align: center;
+}
+#projects .col.s12.m2 {
   text-align: center;
 }
 
@@ -540,6 +557,9 @@ small {
 
 @media (min-width: 1200px) {
   #experience .container {
+    width: 860px;
+  }
+  #projects .container {
     width: 860px;
   }
 }
@@ -642,7 +662,14 @@ small {
     text-align: center;
     display: block;
   }
+  #projects span.card-title {
+    text-align: center;
+    display: block;
+  }
   #experience span.card-title a {
+    margin: 0;
+  }
+  #projects span.card-title a {
     margin: 0;
   }
   i.mdi-navigation-close.right {
