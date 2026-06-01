@@ -3,422 +3,302 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="description" content="Hi, I'm Yutai Long. Passionate, curious, and open-minded student seeking to change the world through innovation.">
-  <!-- Materialize - Compiled and minified CSS-->
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <!-- Font Awesome Icon - CSS-->
-  <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /> -->
-  <!--<link rel="stylesheet" href="/assets/css/v5-font-face.min.css">-->
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/501fe2e45f.js" crossorigin="anonymous"></script>
-  <!-- Custom Styles-->
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="/assets/css/style.css" />
   <title>Yutai Long | Pursuer of Dreams</title>
   <link rel="icon" href="/assets/img/icon.png" type="image/x-icon">
-
-  <!-- Open Graph-->
+  <!-- Open Graph -->
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Yutai Long | Pursuer of Dreams" />
   <meta property="og:url" content="https://yutailong.dev/" />
   <meta property="og:site_name" content="Yutai Long | Pursuer of Dreams" />
-  <!-- Google Site Verification for indexing -->
+  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="_qxK8tePiU2fhnwlwnJ7pkDFnj1k2EiKq_cYGy1Cb84" />
 </head>
 
 <body>
-  <!-- Navigation Menu-->
-  <!-- Nav class 1 -->
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-      <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro"
-          class="brand-logo grey-blue-text">
-          <img src="/assets/img/yutai2.jpg" style="width: 1200% ; height: 1000%" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-hardware-keyboard small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Community section" href="#community" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-people small"></i><span>Community</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-
-
-      <li class="bold">
-        <!-- 
-        1. mdi-communication-contacts
-        2. mdi-content-mail
-        3. mdi-communication-email
-        -->
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-
-      <li class="bold">
-        <!--
-        ICONS:
-        1. mdi-action-description
-        2. mdi-file-folder
-        3. mdi-file-folder-open
-        4. mdi-file-attachment
-        5. mdi-file-folder-shared
-        
-        <a aria-label="Open Yutai's resume in a new tab" href="https://drive.google.com/file/d/1TaWawXZH4nGLNWUwgLjckJCD5ApIrwAo/view?usp=sharing" target="_blank"
-        class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>  -->
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Nav class 2 -->
-  <nav class="hide-on-large only trigger z-depth-1">
-    <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out"
-      class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-    <div class="name-title">
-      <a id="name" aria-label="Navigate to the beginning of the page" href="#" class="teal-text">Yutai Long<span class="black-text">Pursuer of Dreams</span></a>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#intro" class="nav-logo">YL</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#community">Community</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
-  <!-- Nav class 3 -->
-  <nav class="hide-on-large only">
-    <ul id="slide-out" class="side-nav">
-      <li class="bold">
-        <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-person small"></i><span>About</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Experience section" href="#experience"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-action-trending-up small"></i><span>Experience</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Projects section" href="#projects"
-          class="waves-effect waves-dark teal-text"><i
-            class="mdi-hardware-keyboard small"></i><span>Projects</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Community section" href="#community" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-people small"></i><span>Community</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Education section" href="#education" class="waves-effect waves-dark teal-text"><i
-            class="mdi-social-school small"></i><span>Education</span></a>
-      </li>
-      <li class="bold">
-        <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark teal-text"><i
-            class="mdi-content-mail small"></i><span>Contact</span></a>
-      </li>
-      <!--
-      <li class="bold">
-        <a aria-label="Open Yutai's Resume in a new tab"
-          href="https://drive.google.com/file/d/1TaWawXZH4nGLNWUwgLjckJCD5ApIrwAo/view?usp=sharing" target="_blank"
-          class="waves-effect waves-dark teal-text"><i class="mdi-file-folder-open small"></i><span>Resume</span></a>
-      </li>
-      -->
-    </ul>
-  </nav>
+  <!-- Hero Section -->
+  <section id="intro">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-tag">Carnegie Mellon University &nbsp;·&nbsp; Computer Science</div>
+      <h1>Hi, I'm <span class="gradient-text">Yutai Long</span>.</h1>
+      <h2 class="hero-sub-title">A <span class="typing"></span></h2>
+      <p class="hero-description">Passionate, curious, and open-minded student seeking to change the world through innovation.</p>
+      <div class="hero-buttons">
+        <a href="#about" class="btn-primary">Read More</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
 
-  <!-- Main Content-->
+  <!-- Main Content -->
   <main>
-    <!-- First Section: Heading lines and image -->
-    <section id="intro" class="section scrollspy full-height">
+    <!-- About Section -->
+    <section id="about" class="section">
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm Yutai Long.</h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#00204f"></span></h5>
-              <h5>Passionate, curious, and open-minded student seeking to change the world through innovation.</h5>
+        <div class="section-header">
+          <h2 class="section-title">About</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-content">
+          <p class="about-text">Currently a student at <strong>Carnegie Mellon University</strong> studying Computer Science.</p>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h4><i class="fa fa-code"></i> Programming Languages</h4>
+              <div class="skill-tags">
+                <span class="tag">C</span>
+                <span class="tag">C++</span>
+                <span class="tag">C#</span>
+                <span class="tag">Python</span>
+                <span class="tag">Java</span>
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">SQL</span>
+                <span class="tag">MATLAB</span>
+              </div>
             </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
+            <div class="skill-category">
+              <h4><i class="fa fa-layer-group"></i> Libraries &amp; Tools</h4>
+              <div class="skill-tags">
+                <span class="tag">PyTorch</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Pandas</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">SKLearn</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">OpenGL</span>
+                <span class="tag">GitHub</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fa fa-guitar"></i> Hobbies</h4>
+              <div class="skill-tags">
+                <span class="tag tag-muted">Biking</span>
+                <span class="tag tag-muted">Reading</span>
+                <span class="tag tag-muted">Programming</span>
+                <span class="tag tag-muted">Classical Music</span>
+                <span class="tag tag-muted">Badminton</span>
+                <span class="tag tag-muted">Writing Sci-Fi</span>
+              </div>
+            </div>
+            <div class="skill-category">
+              <h4><i class="fa fa-language"></i> Foreign Languages</h4>
+              <div class="skill-tags">
+                <span class="tag tag-muted">Chinese</span>
+                <span class="tag tag-muted">Spanish</span>
+                <span class="tag tag-muted">French</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Second Section: About -->
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <p>
-          Currently a student at Carnegie Mellon University studying Computer Science
-        </p>
-        <p>
-          <ul>
-            <li><b>Programming Languages: </b>C, C++, C#, Python, Java, HTML/CSS, JavaScript, SQL, MATLAB</li>
-            <li><b>Libraries: </b>PyTorch, Tensorflow, Pandas, NumPy, SKLearn, OpenCV, OpenGL, GitHub</li>
-            <li><b>Hobbies: </b>Biking, Reading, Programming, Enjoying Classical Music, Badminton, Writing Science Fictions</li>
-            <li><b>Foreign Languages: </b>Chinese, Spanish, French</li>
-          </ul>
-        </p>
-      </div>
-    </section>
 
-    
-
-
-    <!-- Third Section: Experience -->
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
       <div class="container">
-
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.cs.cmu.edu/" target="_blank"><img alt="CMU logo" src="/assets/img/scs.jpeg" class="responsive-img center-block" /></a>
-
-              </div>
-
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.cs.cmu.edu/" target="_blank" class="teal-text hoverline">Researches at CMU SCS</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Research Assistant</div>
-            <ul>
-              <li>
-                1. Learn and apply the Segmentation Anything Model (SAM) to design a better image processing pipeline to generate better segmentation masks using the Python OpenCV library
-              </li>
-              <li>
-                2. Work on Algorithms for Music Analysis and Data Science (AMADS) using Python, creates algorithms to better analyze symbolic music and facilitates its machine learning applications
-              </li>
-              <li>
-                <b>Tools:</b> Python
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>December 2024 - Ongoing | Carnegie Mellon University School of Computer Science</span>
-          </div>
+        <div class="section-header">
+          <h2 class="section-title">Experience</h2>
+          <div class="section-line"></div>
         </div>
+        <div class="timeline">
 
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://github.com/Yutai007/Climate-Change-Analysis" target="_blank"><img alt="CMIP logo" src="/assets/img/cmip.png" class="responsive-img center-block" /></a>
-
-              </div>
-
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://github.com/Yutai007/Climate-Change-Analysis" target="_blank" class="teal-text hoverline">Climate Research</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Research Intern</div>
-            <ul>
-              <li>
-                Manage the large database of the CMIP5 archive
-              </li>
-              <li>
-                Use advanced statistical modeling techniques to train machine learning models on the database
-              </li>
-              <li>
-                <b>Tools:</b> Python
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>June 2020 - July 2023 | Lawrence Berkeley National Labs</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Section 3.5: Projects -->
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-
-        <!-- Latest Experience -->
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.starblast.io/" target="_blank"><img alt="Starblast logo"
-                    src="/assets/img/starblastio.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="https://www.starblast.io/" target="_blank"
-                      class="teal-text hoverline">Starblast.io</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Mod Developer</div>
-            <ul>
-              <li>
-                Use Javascript to create game mods with over thousands of daily active players
-              </li>
-              <li>
-                Implement cybersecurity measures to guard against hacks and cheats
-              </li>
-              <li>
-                <b>Tools:</b> JavaScript
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>April 2020 - May 2024 | Houston, Texas, USA</span>
-          </div>
-        </div>
-
-        
-        <div class="card">
-          <div class="card-content">
-            <div class="row">
-              <div class="col s12 m2">
-                <a href="https://www.pizzatown.app" target="_blank"><img alt="PizzaTown logo"
-                    src="/assets/img/pizzatown.jpg" class="responsive-img center-block" /></a>
-              </div>
-              <!-- <div class="col s12 m10"> -->
-              <div class="col s12 m10">
-                <p>
-                  <span class="card-title"><a href="http://pizzatown.app" target="_blank"
-                      class="teal-text hoverline">PizzaTown</a></span>
-                </p>
-              </div>
-            </div>
-            <div class="role brown-text text-darken-2">Developer</div>
-            <ul>
-              <li>
-                Work with 5 developers around the world to create a Discord Bot that reached top.gg Top 100 economy game bot
-              </li>
-              <li>
-                Over 10000 unique players and available in over 4000 servers
-              </li>
-              <li>
-                <b>Tools:</b> JavaScript, TypeScript
-              </li>
-            </ul>
-          </div>
-          <div class="card-action">
-            <span>March 2022 - May 2024 | Houston, Texas, USA</span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Fourth Section: community -->
-    <section id="community" class="section scrollspy">
-      <h3 class="page-title white-text teal">Community</h3>
-      <div class="container">
-        <div class="row">
-
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <center><img alt="Energy Corridor Team" src="/assets/img/moh.png" style="height: 100%; width: 100%" class="activator" /></center>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Energy Corridor Team<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Bring music to residents in senior homes through volunteer performances.
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <div class="card-image waves-effect waves-block waves-light">
-                <center><img alt="Energy Corridor Team" src="/assets/img/ECT.jpg" style="height: 70%; width: 100%" /></center>
+          <div class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <a href="https://www.cs.cmu.edu/" target="_blank" class="timeline-logo">
+                  <img src="/assets/img/scs.jpeg" alt="CMU logo" />
+                </a>
+                <div class="timeline-header-text">
+                  <h3><a href="https://www.cs.cmu.edu/" target="_blank">Research at CMU SCS</a></h3>
+                  <span class="timeline-role">Research Assistant</span>
                 </div>
-                <div class="card-action">
-                  <!--<a aria-label="Visit " href="https://google.com/" target="_blank" data-position="top"
-                    data-tooltip="View Online"
-                    class="btn-floating btn-large waves-effect waves-light blue darken-2 tooltipped"><i
-                      class="fa fa-external-link"></i></a>-->
+                <span class="timeline-date">Dec 2024 – Ongoing</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Apply the Segmentation Anything Model (SAM) to design a better image processing pipeline for generating segmentation masks using Python OpenCV</li>
+                <li>Work on Algorithms for Music Analysis and Data Science (AMADS) using Python, creating algorithms to analyze symbolic music and facilitate ML applications</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag tag-accent">OpenCV</span>
+                <span class="tag tag-accent">ML</span>
+              </div>
+              <div class="timeline-footer">Carnegie Mellon University School of Computer Science</div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-card">
+              <div class="timeline-card-header">
+                <a href="https://github.com/Yutai007/Climate-Change-Analysis" target="_blank" class="timeline-logo">
+                  <img src="/assets/img/cmip.png" alt="CMIP logo" />
+                </a>
+                <div class="timeline-header-text">
+                  <h3><a href="https://github.com/Yutai007/Climate-Change-Analysis" target="_blank">Climate Research</a></h3>
+                  <span class="timeline-role">Research Intern</span>
                 </div>
+                <span class="timeline-date">Jun 2020 – Jul 2023</span>
+              </div>
+              <ul class="timeline-list">
+                <li>Managed the large database of the CMIP5 archive</li>
+                <li>Applied advanced statistical modeling and machine learning to climate datasets</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag tag-accent">ML</span>
+                <span class="tag tag-accent">Statistics</span>
+              </div>
+              <div class="timeline-footer">Lawrence Berkeley National Labs</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="projects-grid">
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <a href="https://www.starblast.io/" target="_blank">
+                <img src="/assets/img/starblastio.jpg" alt="Starblast logo" />
+              </a>
+              <div class="project-links">
+                <a href="https://www.starblast.io/" target="_blank" aria-label="Visit Starblast.io"><i class="fa fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3><a href="https://www.starblast.io/" target="_blank">Starblast.io</a></h3>
+              <span class="project-role">Mod Developer</span>
+              <ul>
+                <li>Used JavaScript to create game mods with thousands of daily active players</li>
+                <li>Implemented cybersecurity measures to guard against hacks and cheats</li>
+              </ul>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags"><span class="tag tag-accent">JavaScript</span></div>
+              <span class="project-date">Apr 2020 – May 2024</span>
+            </div>
+          </div>
+
+          <div class="project-card reveal">
+            <div class="project-card-header">
+              <a href="https://www.pizzatown.app" target="_blank">
+                <img src="/assets/img/pizzatown.jpg" alt="PizzaTown logo" />
+              </a>
+              <div class="project-links">
+                <a href="https://www.pizzatown.app" target="_blank" aria-label="Visit PizzaTown"><i class="fa fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3><a href="http://pizzatown.app" target="_blank">PizzaTown</a></h3>
+              <span class="project-role">Developer</span>
+              <ul>
+                <li>Collaborated with 5 developers worldwide to create a Discord Bot reaching top.gg Top 100 economy game bots</li>
+                <li>Over 10,000 unique players across 4,000+ servers</li>
+              </ul>
+            </div>
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag tag-accent">TypeScript</span>
+              </div>
+              <span class="project-date">Mar 2022 – May 2024</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Community</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="community-grid">
+
+          <div class="community-card reveal">
+            <div class="community-card-img">
+              <img src="/assets/img/moh.png" alt="Energy Corridor Team" />
+            </div>
+            <div class="community-card-body">
+              <h3>Energy Corridor Team</h3>
+              <p>Bring music to residents in senior homes through volunteer performances.</p>
+              <div class="community-reveal">
+                <img src="/assets/img/ECT.jpg" alt="Energy Corridor Team performance" />
               </div>
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <center><img alt="Let's Code" src="/assets/img/letscode.png" style="height: 75%; width: 50%" class="activator" /></center>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Let's Code Spring Branch<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Teach kids how to code
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                
-                <ul>
-                  <li>
-                    Python
-                  </li>
-                  <li>
-                    Game Development
-                  </li>
-                  <li>
-                    Web Development
-                  </li>
-                </ul>
+          <div class="community-card reveal">
+            <div class="community-card-img">
+              <img src="/assets/img/letscode.png" alt="Let's Code" />
+            </div>
+            <div class="community-card-body">
+              <h3>Let's Code Spring Branch</h3>
+              <p>Teach kids how to code.</p>
+              <div class="community-tags">
+                <span class="tag tag-accent">Python</span>
+                <span class="tag tag-accent">Game Dev</span>
+                <span class="tag tag-accent">Web Dev</span>
               </div>
             </div>
           </div>
 
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-image waves-effect waves-block waves-light">
-                <center><img alt="Code Ninjas" src="/assets/img/cn.png" style="height: 75%; width: 50%" class="activator" /></center>
-              </div>
-              <div class="card-content">
-                <span class="card-title activator teal-text hoverline">Code Ninjas<i
-                    class="mdi-navigation-more-vert right"></i></span>
-                <p>
-                  Teach kids how to code, but also get paid
-                </p>
-              </div>
-              <div class="card-reveal">
-                <!-- TODO: change this -- only close button -->
-                <!-- <span class="card-title brown-text">Accomplishments<i class="mdi-navigation-close right"></i></span> -->
-                <span class="card-title grey-text"><small>Accomplishments</small><i
-                    class="mdi-navigation-close right"></i></span>
-                <ul>
-                  <li>
-                    JavaScript
-                  </li>
-                  <li>
-                    Lua
-                  </li>
-                  <li>
-                    C# (Unity)
-                  </li>
-                </ul>
+          <div class="community-card reveal">
+            <div class="community-card-img">
+              <img src="/assets/img/cn.png" alt="Code Ninjas" />
+            </div>
+            <div class="community-card-body">
+              <h3>Code Ninjas</h3>
+              <p>Teach kids how to code, but also get paid.</p>
+              <div class="community-tags">
+                <span class="tag tag-accent">JavaScript</span>
+                <span class="tag tag-accent">Lua</span>
+                <span class="tag tag-accent">C# (Unity)</span>
               </div>
             </div>
           </div>
@@ -426,96 +306,161 @@
         </div>
       </div>
     </section>
-    <!-- Fifth Section: Education -->
-    <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
-      <div class="container flow-text">
-        <p>
-          <b></b>Relevant Courses at CMU
-        </p>
-        <p>
-          <ul>
-            <li><b>ML/AI: </b></li>
-            <li>10701 - Introduction to Machine Learning</li>
-            <li>11485 - Introduction to Deep Learning</li>
-            <li><b>Data Structure & Algorithms: </b></li>
-            <li>15122 - Principles of Imperative Computation</li>
-            <li>15150 - Principles of Functional Programming</li>
-            <li><b>Systems and Graphics: </b></li>
-            <li>15213 - Introduction to Computer Systems</li>
-            <li>15362 - Computer Graphics</li>
-            <li><b>Math for CS: </b></li>
-            <li>15151 - Mathematical Foundations for Computer Science</li>
-            <li>15251 - Great Ideas in Theoretical Computer Science</li>
-            <li><b>Math for ML and Quant: </b></li>
-            <li>21242 - Matrix Theory</li>
-            <li>21268 - Multidimensional Calculus</li>
-            <li>21325 - Probability</li>
-          </ul>
-        </p>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="education-content">
+          <div class="edu-header">
+            <img src="/assets/img/scs.jpeg" alt="CMU logo" class="edu-logo" />
+            <div>
+              <h3>Carnegie Mellon University</h3>
+              <p class="edu-degree">B.S. Computer Science</p>
+            </div>
+          </div>
+          <h4 class="courses-title">Relevant Coursework</h4>
+          <div class="courses-grid">
+            <div class="course-category reveal">
+              <h5><i class="fa fa-brain"></i> ML / AI</h5>
+              <ul>
+                <li><span class="course-num">10-701</span> Introduction to Machine Learning</li>
+                <li><span class="course-num">11-485</span> Introduction to Deep Learning</li>
+              </ul>
+            </div>
+            <div class="course-category reveal">
+              <h5><i class="fa fa-sitemap"></i> Data Structures &amp; Algorithms</h5>
+              <ul>
+                <li><span class="course-num">15-122</span> Principles of Imperative Computation</li>
+                <li><span class="course-num">15-150</span> Principles of Functional Programming</li>
+              </ul>
+            </div>
+            <div class="course-category reveal">
+              <h5><i class="fa fa-server"></i> Systems &amp; Graphics</h5>
+              <ul>
+                <li><span class="course-num">15-213</span> Introduction to Computer Systems</li>
+                <li><span class="course-num">15-362</span> Computer Graphics</li>
+              </ul>
+            </div>
+            <div class="course-category reveal">
+              <h5><i class="fa fa-infinity"></i> Math for CS</h5>
+              <ul>
+                <li><span class="course-num">15-151</span> Mathematical Foundations for CS</li>
+                <li><span class="course-num">15-251</span> Great Ideas in Theoretical CS</li>
+              </ul>
+            </div>
+            <div class="course-category reveal">
+              <h5><i class="fa fa-chart-line"></i> Math for ML &amp; Quant</h5>
+              <ul>
+                <li><span class="course-num">21-242</span> Matrix Theory</li>
+                <li><span class="course-num">21-268</span> Multidimensional Calculus</li>
+                <li><span class="course-num">21-325</span> Probability</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- Eight Section: Contact -->
-    <section id="contact" class="section scrollspy full-height">
-      <h3 class="page-title white-text teal">Contact</h3>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
       <div class="container">
-        <p>
-          <a aria-label="Call Yutai" href="tel:3462194386" data-position="top" data-tooltip="Call Yutai"
-            class="btn-floating btn-large waves-effect waves-light blue darken-2 tooltipped"><i class="fa fa-phone fa-shake"></i><a
-              aria-label="Call Yutai" href="tel:3462194386" class="hoverline">+13462194386</a></a>
-        </p>
-        <p>
-          <a aria-label="Email Yutai" href="mailto:longyutai007@gmail.com" target="_blank" data-position="top"
-            data-tooltip="Email Yutai" class="btn-floating btn-large waves-effect waves-light blue darken-2 tooltipped"><i
-              class="fa fa-envelope fa-beat"></i><a aria-label="Email Yutai" href="mailto:longyutai007@gmail.com"
-              class="hoverline">longyutai007@gmail.com</a></a>
-        </p>
-        <p>
-          <a aria-label="View Yutai on GitHub" href="http://github.com/Yutai007" target="_blank"
-            data-position="top" data-tooltip="View Yutai on GitHub"
-            class="btn-floating btn-large waves-effect waves-light blue darken-2 tooltipped"><i class="fa fa-github fa-flip"></i><a
-              aria-label="Yutai on Github" href="http://github.com/Yutai007" class="hoverline"
-              target="_blank">github.com/Yutai007</a></a>
-        </p>
-        <p>
-          <a aria-label="View Yutai on Discord" href="http://discordapp.com/users/630574049566785547" target="_blank"
-            data-position="top" data-tooltip="View Yutai on Discord"
-            class="btn-floating btn-large waves-effect waves-light blue darken-2 tooltipped"><i
-              class="fa-brands fa-discord fa-bounce"></i><a aria-label="Yutai on Discord" href="http://discordapp.com/users/630574049566785547"
-              class="hoverline" target="_blank">Discord: botlore</a></a>
-        </p>
+        <div class="section-header">
+          <h2 class="section-title">Contact</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="contact-intro">Have a question or want to work together? Reach out!</p>
+        <div class="contact-grid">
+          <a href="tel:3462194386" class="contact-card reveal" aria-label="Call Yutai">
+            <div class="contact-icon"><i class="fa fa-phone"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+1 (346) 219-4386</span>
+            </div>
+          </a>
+          <a href="mailto:longyutai007@gmail.com" target="_blank" class="contact-card reveal" aria-label="Email Yutai">
+            <div class="contact-icon"><i class="fa fa-envelope"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Email</span>
+              <span class="contact-value">longyutai007@gmail.com</span>
+            </div>
+          </a>
+          <a href="http://github.com/Yutai007" target="_blank" class="contact-card reveal" aria-label="GitHub">
+            <div class="contact-icon"><i class="fa fa-github"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/Yutai007</span>
+            </div>
+          </a>
+          <a href="http://discordapp.com/users/630574049566785547" target="_blank" class="contact-card reveal" aria-label="Discord">
+            <div class="contact-icon"><i class="fa-brands fa-discord"></i></div>
+            <div class="contact-info">
+              <span class="contact-label">Discord</span>
+              <span class="contact-value">botlore</span>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <!-- typed.js -->
   <script src="./assets/vendor/typed/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
+  <script>
+    // Typed.js
+    var typed = new Typed('.typing', {
       strings: ["Student", "Developer", "Music Enthusiast"],
       loop: true,
       typeSpeed: 50,
       backSpeed: 40
     });
-  </script>
 
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
 
-  <!-- jQuery-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    // Mobile nav toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open');
+    });
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+      });
+    });
 
-  <!-- Materialize - Compiled and minified JavaScript-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
-  <script>
-    // Materialize - Initializers
-    $(document).ready(function () {
-      $(".scrollspy").scrollSpy()
-      // Initialize collapse button
-      $(".button-collapse").sideNav({
-        menuWidth: 190, // Default is 240
-        edge: "left", // Choose the horizontal origin
-        closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
-      })
-    })
+    // Scroll reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinkEls = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 100) current = section.getAttribute('id');
+      });
+      navLinkEls.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === '#' + current);
+      });
+    });
   </script>
 </body>
 
